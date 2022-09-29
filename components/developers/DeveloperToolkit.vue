@@ -1,0 +1,53 @@
+<template>
+  <div class="relative">
+    <img
+      class="absolute right-4 z-[4] h-48 lg:h-auto"
+      src="../../assets/images/developers/toolkit-bg.svg"
+      alt=""
+    />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 pt-40">
+      <h2 class="title text-center mb-8 sm:mb-12">
+        <span>Reach into <br />Astar Developer Toolkit</span>
+      </h2>
+      <p class="text-center mb-12 sm:mb-28">
+        All your favorite tools and integrations work natively with Astar.<br />
+        <a
+          href="https://portal.astar.network/#/astar/dapp-staking/discover"
+          target="_blank"
+          rel="noopener"
+          class="text-space-cyan transition hover:text-space-cyan-light hover:underline"
+        >
+          Explore all Projects Building on Astar ->
+        </a>
+      </p>
+      <div class="px-4 sm:px-6">
+        <div
+          class="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-20 sm:grid-cols-4 lg:grid-cols-5"
+        >
+          <div v-for="logo in logos" class="flex items-center justify-center">
+            <img
+              class="h-12 w-32 lg:w-48 object-contain"
+              :src="`../../assets/images/developers/logos/${logo.image}`"
+              :alt="logo.name"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+const logos = [
+  { name: "Swanky", image: "swanky.png" },
+  { name: "Alchemy", image: "alchemy.svg" },
+  { name: "BwareLabs", image: "bwarelabs.svg" },
+  { name: "Blockdeamon", image: "blockdaemon.svg" },
+  { name: "OnFinality", image: "onfinality.svg" },
+  { name: "Talisman", image: "talisman.svg" },
+  { name: "Metamask", image: "metamask.svg" },
+  { name: "Polkadot.js", image: "polkadot.svg" },
+];
+</script>
+
+<style scoped lang="scss"></style>

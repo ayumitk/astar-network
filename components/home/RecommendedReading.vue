@@ -1,0 +1,96 @@
+<template>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <h2
+      class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-center title"
+    >
+      <span>Recommended Reading</span>
+    </h2>
+    <p class="sm:text-xl text-center mt-4">
+      Learn more about where and how a-star was born.
+    </p>
+    <ul class="grid sm:grid-cols-3 gap-x-4 lg:gap-x-8 mt-12 sm:mt-28">
+      <li
+        class="rounded-3xl mb-16 sm:mb-0 bg-space-gray"
+        v-for="item in reading"
+      >
+        <div class="-mx-5 -mt-12 -mb-4">
+          <img :src="`../../assets/images/home/${item.image}`" alt="" />
+        </div>
+        <div class="px-6 lg:px-7 pb-12">
+          <h3 class="text-xl lg:text-2xl font-bold leading-tight">
+            {{ item.title }}
+          </h3>
+          <p class="my-3">{{ item.description }}</p>
+          <a
+            :href="item.href"
+            class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition"
+            >Learn more -></a
+          >
+        </div>
+      </li>
+    </ul>
+
+    <div
+      class="gradient-outlined-box max-w-5xl mx-auto mt-12 lg:mt-24 sm:flex justify-center items-center p-8 lg:p-12 rounded-3xl sm:space-x-4 lg:space-x-6"
+    >
+      <div class="mb-4 sm:mb-0">
+        <h3 class="font-bold text-2xl">Receive newsletter</h3>
+        <p>
+          Unsubscribe at any time.
+          <a
+            href="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition whitespace-nowrap"
+          >
+            Privacy policy
+            <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" />
+          </a>
+        </p>
+      </div>
+      <form class="sm:flex">
+        <label for="email-address" class="sr-only">Email address</label>
+        <input
+          id="email-address"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          class="mb-2 sm:mb-0 w-full rounded-xl border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-space-sky focus:ring-space-sky sm:max-w-xs mr-2"
+          placeholder="Enter your email"
+        />
+        <Button class="w-full sm:w-auto">Subscribe</Button>
+      </form>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
+const reading = [
+  {
+    title: "Welcome to Astar",
+    description:
+      "Read the vision of Aster and lean about powerful blockchain technology that makes it possible.",
+    href: "#",
+    image: "reading-astar.svg",
+  },
+  {
+    title: "Discover the ASTR token",
+    description:
+      "Read Astar's original features and innovative features that unlock web3.",
+    href: "#",
+    image: "reading-token.svg",
+  },
+  {
+    title: "Explore the ecosystem",
+    description:
+      "Learn more about Astar ecosystem and where we are heading to realise web3.",
+    href: "#",
+    image: "reading-ecosystem.svg",
+  },
+];
+</script>
+
+<style scoped lang="postcss"></style>

@@ -1,0 +1,14 @@
+<template>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+    <h2
+      class="text-center font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight title"
+    >
+      <span>The Gateway <br />in the multichain era</span>
+    </h2>
+    <div><img src="../../assets/images/home/gateway.svg" alt="" /></div>
+  </div>
+</template>
+
+<script setup lang="ts"></script>
+
+<style scoped lang="postcss"></style>

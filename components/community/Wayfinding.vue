@@ -1,0 +1,123 @@
+<template>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+    <h2 class="title text-center mb-8 sm:mb-16"><span>Wayfinding</span></h2>
+    <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
+      <li v-for="item in social">
+        <a
+          :href="item.href"
+          target="_blank"
+          rel="noopener"
+          class="bg-space-gray block rounded-3xl text-center py-6 sm:py-8 px-2 sm:px-4 hover:bg-space-gray-lighter transition"
+        >
+          <component
+            :is="item.icon"
+            class="h-10 sm:h-12 w-10 sm:w-12 mx-auto my-4"
+            :class="item.color"
+            aria-hidden="true"
+          />
+          <span
+            class="font-mono text-xs border border-gray-500 rounded-lg py-1 px-3"
+          >
+            {{ item.type }}
+          </span>
+          <h3 class="font-medium text-xl mt-2">{{ item.name }}</h3>
+          <div class="stats">
+            <span class="font-bold text-xl mr-1.5">{{ item.stats }}</span>
+            <small class="block">{{ item.unit }}</small>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script setup lang="ts">
+import Twitter from "../icons/Twitter.vue";
+import Discord from "../icons/Discord.vue";
+import Telegram from "../icons/Telegram.vue";
+import Medium from "../icons/Medium.vue";
+import Github from "../icons/Github.vue";
+import Youtube from "../icons/Youtube.vue";
+import Comments from "../icons/Comments.vue";
+
+const social = [
+  {
+    name: "Twitter",
+    href: "https://twitter.com/astarNetwork",
+    icon: Twitter,
+    stats: "85,032",
+    unit: "followers",
+    type: "Announcements",
+    color: "text-[#1DA1F2]",
+  },
+  {
+    name: "Discord",
+    href: "https://discord.gg/Z3nC9U4",
+    icon: Discord,
+    stats: "85,032",
+    unit: "members",
+    type: "Engineering",
+    color: "text-[#5865F2]",
+  },
+  {
+    name: "Telegram",
+    href: "https://t.me/PlasmOfficial",
+    icon: Telegram,
+    stats: "85,032",
+    unit: "members",
+    type: "Announcements",
+    color: "text-[#0088CC]",
+  },
+  {
+    name: "Medium",
+    href: "https://medium.com/astar-network",
+    icon: Medium,
+    stats: "85,032",
+    unit: "followers",
+    type: "Announcements",
+    color: "text-gray-200",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/AstarNetwork",
+    icon: Github,
+    stats: "85,032",
+    unit: "stars",
+    type: "Engineering",
+    color: "text-[#FAFAFA]",
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/c/AstarNetwork",
+    icon: Youtube,
+    stats: "85,032",
+    unit: "subscribes",
+    type: "Announcements",
+    color: "text-[#e64747]",
+  },
+  {
+    name: "Forum",
+    href: "https://forum.astar.network/",
+    icon: Comments,
+    stats: "85,032",
+    unit: "posts",
+    type: "Announcements",
+    color: "text-gray-200",
+  },
+];
+</script>
+
+<style scoped lang="postcss">
+.stats span {
+  background: linear-gradient(
+    90deg,
+    #e6007a -5.88%,
+    #703ac2 15.42%,
+    #0070eb 40.77%,
+    #0297fb 72.21%,
+    #0ae2ff 95.53%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
