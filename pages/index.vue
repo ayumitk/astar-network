@@ -70,7 +70,7 @@ import Features from "../components/home/Features.vue";
 import Backers from "../components/home/Backers.vue";
 
 definePageMeta({
-  layout: "home",
+  // layout: "home",
   pageTitle: "Home",
   slug: "",
   description:
