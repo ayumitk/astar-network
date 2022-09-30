@@ -19,7 +19,7 @@
             class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
           >
             <span class="sr-only">Open menu</span>
-            <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+            <!-- <Bars3Icon class="h-6 w-6" aria-hidden="true" /> -->
           </PopoverButton>
         </div>
         <div class="hidden lg:flex lg:items-center">
@@ -87,7 +87,7 @@
               rel="noopener"
             >
               Launch App
-              <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
+              <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" /> -->
             </Button>
           </div>
         </div>
@@ -124,7 +124,7 @@
                     class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
                   >
                     <span class="sr-only">Close menu</span>
-                    <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+                    <!-- <XMarkIcon class="h-6 w-6" aria-hidden="true" /> -->
                   </PopoverButton>
                 </div>
               </div>
@@ -169,7 +169,7 @@
                   class="w-full"
                 >
                   Launch App
-                  <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
+                  <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" /> -->
                 </Button>
               </div>
             </nav>
@@ -187,12 +187,12 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/vue";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  ArrowTopRightOnSquareIcon,
-} from "@heroicons/vue/24/outline";
-import { ChevronDownIcon } from "@heroicons/vue/20/solid";
+// import {
+//   Bars3Icon,
+//   XMarkIcon,
+//   ArrowTopRightOnSquareIcon,
+// } from "@heroicons/vue/24/outline";
+// import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 
 const network = [
   { label: "Nav1", href: "#" },

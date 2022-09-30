@@ -26,9 +26,9 @@
                 aria-hidden="true"
               />
               <div class="hidden sm:inline">{{ item.name }}</div>
-              <ArrowTopRightOnSquareIcon
+              <!-- <ArrowTopRightOnSquareIcon
                 class="w-5 h-5 stroke-2 ml-1 hidden sm:inline"
-              />
+              /> -->
             </Button>
           </li>
         </ul>
@@ -38,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 import Github from "../icons/Github.vue";
 import Documentation from "../icons/Documentation.vue";
 import Discord from "../icons/Discord.vue";

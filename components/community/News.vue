@@ -20,7 +20,7 @@
             class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline"
           >
             Read article
-            <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" />
+            <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" /> -->
           </span>
         </a>
       </li>
@@ -33,14 +33,14 @@
         rel="noopener"
       >
         Medium
-        <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
+        <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" /> -->
       </Button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 const news = [
   {
     publishedDate: "Jan 15 2022",

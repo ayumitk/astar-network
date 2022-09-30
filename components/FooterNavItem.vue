@@ -12,7 +12,7 @@
     "
   >
     {{ item.name }}
-    <ArrowTopRightOnSquareIcon class="w-4 h-4 inline-block stroke-2" />
+    <!-- <ArrowTopRightOnSquareIcon class="w-4 h-4 inline-block stroke-2" /> -->
   </a>
   <a
     v-else
@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
 interface Props {
   item: {

@@ -26,7 +26,7 @@
             class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline"
           >
             Watch video
-            <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" />
+            <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" /> -->
           </span>
         </div>
       </a>
@@ -78,14 +78,14 @@
         rel="noopener"
       >
         Youtube
-        <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
+        <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" /> -->
       </Button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 const videos = [
   {
     title: "getting_started: The Astar Portal - What is it?",

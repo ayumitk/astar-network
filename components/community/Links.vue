@@ -21,7 +21,7 @@
             :class="index === 2 ? 'border-space-gray-dark' : 'border-white'"
           >
             {{ item.to }}
-            <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" />
+            <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" /> -->
           </span>
         </div>
       </a>
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
 const links = [
   {
