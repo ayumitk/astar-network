@@ -23,10 +23,10 @@
             {{ videos[0].title }}
           </h3>
           <span
-            class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline"
+            class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
           >
             Watch video
-            <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" /> -->
+            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </div>
       </a>
@@ -57,12 +57,10 @@
                 {{ video.title }}
               </h3>
               <span
-                class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline"
+                class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
               >
                 Watch video
-                <ArrowTopRightOnSquareIcon
-                  class="w-5 h-5 inline-block stroke-2"
-                />
+                <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
               </span>
             </div>
           </a>
@@ -78,14 +76,13 @@
         rel="noopener"
       >
         Youtube
-        <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" /> -->
+        <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
       </Button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 const videos = [
   {
     title: "getting_started: The Astar Portal - What is it?",

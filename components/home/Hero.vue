@@ -23,7 +23,7 @@
           class="w-[280px] sm:w-auto"
         >
           Documentation
-          <ArrowTopRightOnSquareIcon class="w-6 h-6 ml-1 stroke-2" />
+          <IconArrowTopRightOnSquare class="w-6 h-6 ml-1 stroke-2" />
         </Button>
         <Button
           variant="outlined"
@@ -34,7 +34,7 @@
           class="w-[280px] sm:w-auto"
         >
           Launch App
-          <ArrowTopRightOnSquareIcon class="w-6 h-6 ml-1 stroke-2" />
+          <IconArrowTopRightOnSquare class="w-6 h-6 ml-1 stroke-2" />
         </Button>
       </div>
     </div>
@@ -42,6 +42,5 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
-import Button from "../Button.vue";
+import Button from "~/components/Button.vue";
 </script>

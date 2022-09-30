@@ -3,7 +3,7 @@
     <div class="shrink-0 mb-8 sm:mb-0">
       <img
         class="mx-auto max-w-[280px] sm:max-w-[350px] lg:max-w-full"
-        src="../../assets/images/home/welcome-astronaut.svg"
+        src="~/assets/images/home/welcome-astronaut.svg"
         alt=""
       />
     </div>
@@ -27,7 +27,7 @@
           <dd class="order-1">
             <img
               class="max-w-[300px] lg:max-w-full"
-              src="../../assets/images/home/welcome-dapps.svg"
+              src="~/assets/images/home/welcome-dapps.svg"
               alt=""
             />
           </dd>
@@ -39,7 +39,7 @@
           <dd class="order-1">
             <img
               class="max-w-[300px] lg:max-w-full"
-              src="../../assets/images/home/welcome-community-members.svg"
+              src="~/assets/images/home/welcome-community-members.svg"
               alt=""
             />
           </dd>

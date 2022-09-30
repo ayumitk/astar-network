@@ -2,7 +2,7 @@
   <div class="relative">
     <img
       class="absolute right-4 z-[4] h-48 lg:h-auto"
-      src="../../assets/images/developers/toolkit-bg.svg"
+      src="~/assets/images/developers/toolkit-bg.svg"
       alt=""
     />
     <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 pt-40">
@@ -24,11 +24,11 @@
         <div
           class="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-20 sm:grid-cols-4 lg:grid-cols-5"
         >
-          <div v-for="logo in logos" class="flex items-center justify-center">
+          <div v-for="item in logos" class="flex items-center justify-center">
             <img
               class="h-12 w-32 lg:w-48 object-contain"
-              :src="`../../assets/images/developers/logos/${logo.image}`"
-              :alt="logo.name"
+              :src="useAsset('developers/logos/' + item.image)"
+              :alt="item.name"
             />
           </div>
         </div>

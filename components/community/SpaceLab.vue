@@ -20,14 +20,12 @@
           rel="noopener"
         >
           Learn more
-          <ArrowTopRightOnSquareIcon
-            class="w-5 h-5 inline-block stroke-2 ml-1"
-          />
+          <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
         </Button>
       </div>
       <div class="shrink-0">
         <img
-          src="../../assets/images/community/space=lab.svg"
+          src="~/assets/images/community/space=lab.svg"
           alt=""
           class="rounded-b-3xl lg:rounded-r-3xl"
         />
@@ -36,9 +34,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
-import Button from "../Button.vue";
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="postcss"></style>

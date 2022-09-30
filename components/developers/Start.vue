@@ -19,7 +19,7 @@
           <div class="-mt-12 mb-2">
             <img
               class="mx-auto w-32 sm:w-auto"
-              :src="`../../assets/images/developers/${item.image}`"
+              :src="useAsset('developers/' + item.image)"
               alt=""
             />
           </div>

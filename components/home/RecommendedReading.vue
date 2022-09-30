@@ -14,7 +14,7 @@
         v-for="item in reading"
       >
         <div class="-mx-5 -mt-12 -mb-4">
-          <img :src="`../../assets/images/home/${item.image}`" alt="" />
+          <img :src="useAsset('home/' + item.image)" :alt="item.title" />
         </div>
         <div class="px-6 lg:px-7 pb-12">
           <h3 class="text-xl lg:text-2xl font-bold leading-tight">
@@ -44,7 +44,7 @@
             class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition whitespace-nowrap"
           >
             Privacy policy
-            <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" /> -->
+            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 inline-block" />
           </a>
         </p>
       </div>
@@ -66,8 +66,6 @@
 </template>
 
 <script setup lang="ts">
-// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
-
 const reading = [
   {
     title: "Welcome to Astar",

@@ -21,7 +21,7 @@
             {{ item.type }}
           </span>
           <h3 class="font-medium text-xl mt-2">{{ item.name }}</h3>
-          <div class="stats">
+          <div class="stats leading-snug">
             <span class="font-bold text-xl mr-1.5">{{ item.stats }}</span>
             <small class="block">{{ item.unit }}</small>
           </div>
@@ -32,13 +32,13 @@
 </template>
 
 <script setup lang="ts">
-import Twitter from "../icons/Twitter.vue";
-import Discord from "../icons/Discord.vue";
-import Telegram from "../icons/Telegram.vue";
-import Medium from "../icons/Medium.vue";
-import Github from "../icons/Github.vue";
-import Youtube from "../icons/Youtube.vue";
-import Comments from "../icons/Comments.vue";
+const Twitter = resolveComponent("IconTwitter");
+const Discord = resolveComponent("IconDiscord");
+const Telegram = resolveComponent("IconTelegram");
+const Medium = resolveComponent("IconMedium");
+const Github = resolveComponent("IconGithub");
+const Youtube = resolveComponent("IconYoutube");
+const Comments = resolveComponent("IconComments");
 
 const social = [
   {

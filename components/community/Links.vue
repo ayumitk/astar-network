@@ -17,11 +17,11 @@
             item.label
           }}</span>
           <span
-            class="block mt-4 border rounded-full py-1"
+            class="mt-4 border rounded-full py-1 flex justify-center items-center"
             :class="index === 2 ? 'border-space-gray-dark' : 'border-white'"
           >
             {{ item.to }}
-            <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" /> -->
+            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </div>
       </a>
@@ -30,8 +30,6 @@
 </template>
 
 <script setup lang="ts">
-// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
-
 const links = [
   {
     label: "Learn in depth",

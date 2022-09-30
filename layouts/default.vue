@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <slot />
-    <img class="w-full" src="../assets/images/common/cloud.svg" alt="" />
+    <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
     <div class="bg-white">
       <Footer />
     </div>

@@ -10,7 +10,7 @@
           <span class="sr-only">Astar Network</span>
           <img
             class="h-8 w-auto sm:h-14"
-            src="../assets/images/common/logo.svg"
+            src="~/assets/images/common/logo.svg"
             alt="Astar Network"
           />
         </a>
@@ -19,7 +19,7 @@
             class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
           >
             <span class="sr-only">Open menu</span>
-            <!-- <Bars3Icon class="h-6 w-6" aria-hidden="true" /> -->
+            <IconBars3 class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
         <div class="hidden lg:flex lg:items-center">
@@ -36,7 +36,7 @@
                 ]"
               >
                 <span>Network</span>
-                <ChevronDownIcon
+                <IconChevronDown
                   :class="[
                     open ? 'text-space-cyan-light' : 'text-gray-200',
                     'ml-2 h-5 w-5 group-hover:text-space-cyan-light',
@@ -87,7 +87,7 @@
               rel="noopener"
             >
               Launch App
-              <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" /> -->
+              <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
             </Button>
           </div>
         </div>
@@ -115,7 +115,7 @@
                 <div>
                   <img
                     class="h-8 w-auto"
-                    src="../assets/images/common/logo.svg"
+                    src="~/assets/images/common/logo.svg"
                     alt="Astar Network"
                   />
                 </div>
@@ -124,7 +124,7 @@
                     class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
                   >
                     <span class="sr-only">Close menu</span>
-                    <!-- <XMarkIcon class="h-6 w-6" aria-hidden="true" /> -->
+                    <IconXMark class="h-6 w-6" aria-hidden="true" />
                   </PopoverButton>
                 </div>
               </div>
@@ -169,7 +169,7 @@
                   class="w-full"
                 >
                   Launch App
-                  <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" /> -->
+                  <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
                 </Button>
               </div>
             </nav>
@@ -187,12 +187,6 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/vue";
-// import {
-//   Bars3Icon,
-//   XMarkIcon,
-//   ArrowTopRightOnSquareIcon,
-// } from "@heroicons/vue/24/outline";
-// import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 
 const network = [
   { label: "Nav1", href: "#" },

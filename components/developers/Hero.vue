@@ -11,7 +11,7 @@
           Build Ethereum and native dApps on Astar and be the part of multichain
           innovation.
         </p>
-        <ul class="flex justify-center mt-12 space-x-2">
+        <ul class="flex justify-center sm:justify-start mt-12 space-x-2">
           <li v-for="item in hero">
             <Button
               color="secondary"
@@ -25,10 +25,10 @@
                 class="h-8 w-8 sm:mr-2 my-2"
                 aria-hidden="true"
               />
-              <div class="hidden sm:inline">{{ item.name }}</div>
-              <!-- <ArrowTopRightOnSquareIcon
-                class="w-5 h-5 stroke-2 ml-1 hidden sm:inline"
-              /> -->
+              <div class="hidden sm:inline-block">{{ item.name }}</div>
+              <IconArrowTopRightOnSquare
+                class="w-5 h-5 stroke-2 ml-1 hidden sm:inline-block"
+              />
             </Button>
           </li>
         </ul>
@@ -38,10 +38,9 @@
 </template>
 
 <script setup lang="ts">
-// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
-import Github from "../icons/Github.vue";
-import Documentation from "../icons/Documentation.vue";
-import Discord from "../icons/Discord.vue";
+const Github = resolveComponent("IconGithub");
+const Discord = resolveComponent("IconDiscord");
+const Documentation = resolveComponent("IconDocumentation");
 
 const hero = [
   { name: "GitHub", href: "#", icon: Github },

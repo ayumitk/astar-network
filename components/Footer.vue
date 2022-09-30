@@ -12,8 +12,12 @@
           Developers
         </h3>
         <ul role="list" class="mt-4 space-y-4">
-          <li v-for="item in navigation.developers" :key="item.name">
-            <FooterNavItemVue :item="item" :page="page" />
+          <li
+            v-for="item in navigation.developers"
+            :key="item.name"
+            class="leading-snug"
+          >
+            <FooterNavItem :item="item" :page="page" />
           </li>
         </ul>
       </div>
@@ -26,7 +30,11 @@
           Network
         </h3>
         <ul role="list" class="mt-4 space-y-4">
-          <li v-for="item in navigation.network" :key="item.name">
+          <li
+            v-for="item in navigation.network"
+            :key="item.name"
+            class="leading-snug"
+          >
             <a
               :href="item.href"
               class="hover:underline transition"
@@ -50,8 +58,12 @@
           Community
         </h3>
         <ul role="list" class="mt-4 space-y-4">
-          <li v-for="item in navigation.community" :key="item.name">
-            <FooterNavItemVue :item="item" :page="page" />
+          <li
+            v-for="item in navigation.community"
+            :key="item.name"
+            class="leading-snug"
+          >
+            <FooterNavItem :item="item" :page="page" />
           </li>
         </ul>
       </div>
@@ -64,8 +76,12 @@
           Company
         </h3>
         <ul role="list" class="mt-4 space-y-4">
-          <li v-for="item in navigation.company" :key="item.name">
-            <FooterNavItemVue :item="item" :page="page" />
+          <li
+            v-for="item in navigation.company"
+            :key="item.name"
+            class="leading-snug"
+          >
+            <FooterNavItem :item="item" :page="page" />
           </li>
         </ul>
       </div>
@@ -78,8 +94,12 @@
           Collaboration
         </h3>
         <ul role="list" class="mt-4 space-y-4">
-          <li v-for="item in navigation.collaboration" :key="item.name">
-            <FooterNavItemVue :item="item" :page="page" />
+          <li
+            v-for="item in navigation.collaboration"
+            :key="item.name"
+            class="leading-snug"
+          >
+            <FooterNavItem :item="item" :page="page" />
           </li>
         </ul>
       </div>
@@ -119,14 +139,12 @@
 </template>
 
 <script setup lang="ts">
-import FooterNavItemVue from "./FooterNavItem.vue";
-
-import Twitter from "../components/icons/Twitter.vue";
-import Discord from "../components/icons/Discord.vue";
-import Telegram from "../components/icons/Telegram.vue";
-import Medium from "../components/icons/Medium.vue";
-import Github from "../components/icons/Github.vue";
-import Youtube from "../components/icons/Youtube.vue";
+const Twitter = resolveComponent("IconTwitter");
+const Discord = resolveComponent("IconDiscord");
+const Telegram = resolveComponent("IconTelegram");
+const Medium = resolveComponent("IconMedium");
+const Github = resolveComponent("IconGithub");
+const Youtube = resolveComponent("IconYoutube");
 
 interface Props {
   page?: string;

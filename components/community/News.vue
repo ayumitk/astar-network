@@ -8,7 +8,7 @@
         <a :href="item.href" target="_blank" rel="noopener" class="block group">
           <div class="mb-4">
             <img
-              :src="`../../assets/images/community/medium/${item.id}.png`"
+              :src="useAsset('community/medium/' + item.id + '.png')"
               :alt="item.title"
               class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
             />
@@ -17,10 +17,10 @@
           <h3 class="text-lg font-medium mb-2">{{ item.title }}</h3>
           <p class="text-gray-400 mb-2 text-sm">{{ item.description }}</p>
           <span
-            class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline"
+            class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
           >
             Read article
-            <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block stroke-2" /> -->
+            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </a>
       </li>
@@ -33,14 +33,13 @@
         rel="noopener"
       >
         Medium
-        <!-- <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" /> -->
+        <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
       </Button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-// import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 const news = [
   {
     publishedDate: "Jan 15 2022",

@@ -2,7 +2,7 @@
   <div class="relative z-10">
     <img
       class="absolute z-[4] h-80 lg:h-auto"
-      src="../../assets/images/developers/multichain-bg.svg"
+      src="~/assets/images/developers/multichain-bg.svg"
       alt=""
     />
     <div
@@ -20,10 +20,7 @@
       <ul class="grid gap-12 lg:ml-28">
         <li v-for="item in future" class="flex">
           <div class="mr-8 shrink-0">
-            <img
-              :src="`../../assets/images/developers/${item.image}`"
-              :alt="item.name"
-            />
+            <img :src="useAsset('developers/' + item.image)" :alt="item.name" />
           </div>
           <div>
             <h3 class="font-bold text-xl mb-1">{{ item.name }}</h3>
