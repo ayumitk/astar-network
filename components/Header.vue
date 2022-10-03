@@ -2,37 +2,42 @@
 <template>
   <Popover class="relative">
     <div class="pointer-events-none absolute inset-0 z-30" aria-hidden="true" />
-    <div class="relative z-20">
+    <Popover v-slot="{ open }">
       <div
-        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 md:space-x-10 lg:px-8"
+        :class="[
+          open ? 'bg-space-gray-dark shadow-lg bg-opacity-95' : '',
+          'transition absolute z-50 w-full',
+        ]"
       >
-        <a href="/" class="flex">
-          <span class="sr-only">Astar Network</span>
-          <img
-            class="h-8 w-auto sm:h-14"
-            src="~/assets/images/common/logo.svg"
-            alt="Astar Network"
-          />
-        </a>
-        <div class="-my-2 -mr-2 lg:hidden">
-          <PopoverButton
-            class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
-          >
-            <span class="sr-only">Open menu</span>
-            <IconBars3 class="h-6 w-6" aria-hidden="true" />
-          </PopoverButton>
-        </div>
-        <div class="hidden lg:flex lg:items-center">
-          <PopoverGroup as="nav" class="flex space-x-10">
-            <a href="/developers" class="nav-item">Developers</a>
+        <div
+          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 md:space-x-10 lg:px-8"
+        >
+          <a href="/" class="flex">
+            <span class="sr-only">Astar Network</span>
+            <img
+              class="h-8 w-auto sm:h-14"
+              src="~/assets/images/common/logo.svg"
+              alt="Astar Network"
+            />
+          </a>
+          <div class="-my-2 -mr-2 lg:hidden">
+            <PopoverButton
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
+            >
+              <span class="sr-only">Open menu</span>
+              <IconBars3 class="h-6 w-6" aria-hidden="true" />
+            </PopoverButton>
+          </div>
+          <div class="hidden lg:flex lg:items-center">
+            <PopoverGroup as="nav" class="flex space-x-10">
+              <a href="/developers" class="nav-item">Developers</a>
 
-            <Popover v-slot="{ open }">
               <PopoverButton
                 :class="[
                   open
                     ? 'text-space-cyan-light'
                     : 'text-white hover:text-space-cyan-light',
-                  'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 text-base font-mono transition',
+                  'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition',
                 ]"
               >
                 <span>Network</span>
@@ -45,7 +50,7 @@
                 />
               </PopoverButton>
 
-              <teleport to="body">
+              <teleport to="#subnav">
                 <transition
                   enter-active-class="transition ease-out duration-200"
                   enter-from-class="opacity-0 -translate-y-1"
@@ -54,45 +59,58 @@
                   leave-from-class="opacity-100 translate-y-0"
                   leave-to-class="opacity-0 -translate-y-1"
                 >
-                  <PopoverPanel
-                    class="absolute inset-x-0 z-50 hidden transform md:block top-28"
-                  >
+                  <PopoverPanel class="border-t border-gray-600">
                     <div
-                      class="bg-space-gray-dark bg-opacity-90 shadow-lg mx-auto grid max-w-5xl p-12 rounded-3xl"
+                      class="mx-auto grid max-w-7xl pt-10 pb-24 rounded-3xl px-4 sm:px-6"
                     >
-                      <ul>
+                      <ul class="grid grid-cols-3 gap-12">
                         <li v-for="item in network">
-                          <a
-                            class="inline-block py-2 text-white hover:underline transition hover:text-space-cyan-lighter"
-                            :href="item.href"
-                            >{{ item.label }}</a
+                          <span
+                            class="uppercase block border-b border-gray-600 text-gray-400 pb-1 mb-3"
+                            >{{ item.label }}</span
                           >
+                          <ul>
+                            <li v-for="nav in item.nav">
+                              <a
+                                class="inline-block py-2 text-white hover:underline transition hover:text-space-cyan-lighter"
+                                :href="nav.href"
+                                target="_blank"
+                                rel="noopener"
+                              >
+                                {{ nav.label }}
+                                <IconArrowTopRightOnSquare
+                                  class="w-4 h-4 inline-block stroke-2"
+                                />
+                              </a>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
                     </div>
                   </PopoverPanel>
                 </transition>
               </teleport>
-            </Popover>
 
-            <a href="/community" class="nav-item">Community</a>
-            <a href="#" class="nav-item">Ecosystem</a>
-            <a href="#" class="nav-item">About</a>
-          </PopoverGroup>
-          <div class="md:ml-12">
-            <Button
-              variant="outlined"
-              href="https://portal.astar.network/"
-              target="_blank"
-              rel="noopener"
-            >
-              Launch App
-              <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
-            </Button>
+              <a href="/community" class="nav-item">Community</a>
+              <a href="#" class="nav-item">Ecosystem</a>
+              <!-- <a href="#" class="nav-item">About</a> -->
+            </PopoverGroup>
+            <div class="md:ml-12">
+              <Button
+                variant="outlined"
+                href="https://portal.astar.network/"
+                target="_blank"
+                rel="noopener"
+              >
+                Launch App
+                <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+              </Button>
+            </div>
           </div>
         </div>
+        <div id="subnav"></div>
       </div>
-    </div>
+    </Popover>
 
     <teleport to="body">
       <transition
@@ -156,9 +174,9 @@
                 <li>
                   <a href="#" class="text-white py-4 inline-block">Ecosystem</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#" class="text-white py-4 inline-block">About</a>
-                </li>
+                </li> -->
               </ul>
               <div class="py-6">
                 <Button
@@ -189,14 +207,50 @@ import {
 } from "@headlessui/vue";
 
 const network = [
-  { label: "Nav1", href: "#" },
-  { label: "Nav2", href: "#" },
-  { label: "Nav3", href: "#" },
+  {
+    label: "Explorer",
+    nav: [
+      { label: "Subscan", href: "https://astar.subscan.io/" },
+      { label: "Blockscout", href: "https://blockscout.com/astar/" },
+    ],
+  },
+  {
+    label: "Status",
+    nav: [
+      {
+        label: "DApp Staking",
+        href: "https://portal.astar.network/#/astar/dapp-staking/discover",
+      },
+      { label: "DeFi TVL", href: "https://defillama.com/chain/Astar" },
+      {
+        label: "Applications",
+        href: "https://dappradar.com/rankings/protocol/astar",
+      },
+    ],
+  },
+  {
+    label: "Infrastructure",
+    nav: [
+      { label: "Alchemy", href: "https://www.alchemy.com/astar" },
+      {
+        label: "Blockdeamon",
+        href: "https://blockdaemon.com/protocols/astar/",
+      },
+      {
+        label: "Bware Labs",
+        href: "https://blastapi.io/",
+      },
+      {
+        label: "OnFinality",
+        href: "https://www.onfinality.io/marketplace/astar",
+      },
+    ],
+  },
 ];
 </script>
 
 <style lang="postcss">
 .nav-item {
-  @apply text-base text-white hover:text-space-cyan-light font-mono transition;
+  @apply text-white hover:text-space-cyan-light font-medium transition;
 }
 </style>

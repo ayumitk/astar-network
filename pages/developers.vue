@@ -1,5 +1,5 @@
 <template>
-  <div class="space-gradient relative min-h-[60vh] sm:min-h-[80vh]">
+  <div class="space-gradient relative">
     <img
       class="absolute z-[1] mix-blend-overlay bottom-0"
       src="~/assets/images/common/space-cloud.png"
@@ -15,8 +15,7 @@
       src="~/assets/images/developers/hero.svg"
       alt=""
     />
-    <Header />
-    <DevelopersHero class="pb-24 sm:pb-64" />
+    <DevelopersHero />
   </div>
   <DevelopersStart class="pb-20 sm:pb-64" />
   <DevelopersAdvantages class="pb-12" />

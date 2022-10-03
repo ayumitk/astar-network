@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="relative bg-black">
+  <div class="relative">
+    <div class="bg-black">
       <div class="absolute z-0 w-screen h-screen flex items-center">
         <video poster="" webkit-playsinline playsinline muted autoplay loop>
           <source src="~/assets/videos/astar.mp4" type="video/mp4" />
@@ -17,7 +17,6 @@
           src="~/assets/images/common/space-stars.svg"
           alt=""
         />
-        <Header />
         <HomeHero />
         <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">
           <HomeWelcome />

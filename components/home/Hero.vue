@@ -1,8 +1,8 @@
 <template>
   <div
-    class="text-center h-[calc(100vh-120px)] flex items-center justify-center z-10 relative"
+    class="text-center h-screen flex items-center justify-center z-10 relative"
   >
-    <div class="max-w-7xl px-4 sm:px-6">
+    <div class="max-w-7xl px-4 sm:px-6 pt-12">
       <h1
         class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] drop-shadow tracking-tight"
       >

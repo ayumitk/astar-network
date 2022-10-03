@@ -1,5 +1,6 @@
 <template>
   <div class="overflow-hidden">
+    <Header />
     <slot />
     <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
     <div class="bg-white">

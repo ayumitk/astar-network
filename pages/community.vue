@@ -1,5 +1,5 @@
 <template>
-  <div class="space-gradient relative min-h-[60vh] sm:min-h-[80vh]">
+  <div class="space-gradient relative">
     <img
       class="absolute z-[1] mix-blend-overlay bottom-0"
       src="~/assets/images/common/space-cloud.png"
@@ -15,8 +15,7 @@
       src="~/assets/images/community/hero.svg"
       alt=""
     />
-    <Header />
-    <CommunityHero class="relative z-10" />
+    <CommunityHero />
   </div>
   <CommunityLinks class="pb-28 sm:pb-44" />
   <CommunityWayfinding class="pb-28 sm:pb-64" />
