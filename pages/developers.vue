@@ -6,7 +6,7 @@
       alt=""
     />
     <img
-      class="absolute z-[2] mix-blend-screen"
+      class="fixed z-[2] mix-blend-screen"
       src="~/assets/images/common/space-stars.svg"
       alt=""
     />
