@@ -1,18 +1,18 @@
 <template>
   <div class="space-gradient relative">
     <img
-      class="absolute z-[1] mix-blend-overlay bottom-0"
+      class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
       src="~/assets/images/common/space-cloud.png"
       alt=""
     />
     <img
-      class="fixed z-[2] mix-blend-screen"
-      src="~/assets/images/common/space-stars.svg"
+      class="absolute z-[2] right-0 max-h-[40vh] lg:max-h-[80vh] -bottom-4 lg:bottom-4"
+      src="~/assets/images/community/hero.svg"
       alt=""
     />
     <img
-      class="absolute z-[3] right-0 max-h-[40vh] lg:max-h-[80vh] -bottom-4 sm:bottom-4"
-      src="~/assets/images/community/hero.svg"
+      class="fixed z-[3] mix-blend-screen portrait:h-screen landscape:w-screen object-cover"
+      src="~/assets/images/common/space-stars.svg"
       alt=""
     />
     <CommunityHero />
@@ -37,7 +37,7 @@ definePageMeta({
   @apply w-full h-full absolute content-[""] z-[0];
   background: linear-gradient(
     180deg,
-    rgba(8, 16, 41, 0) 50%,
+    rgba(8, 16, 41, 0) 30%,
     rgba(8, 16, 41, 100) 100%
   );
 }

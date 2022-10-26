@@ -10,12 +10,12 @@
       </div>
       <div class="space-gradient mix-blend-screen">
         <img
-          class="absolute z-[1] mix-blend-overlay"
+          class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
           src="~/assets/images/common/space-cloud.png"
           alt=""
         />
         <img
-          class="fixed z-[2] mix-blend-screen"
+          class="fixed z-[2] mix-blend-screen portrait:h-screen landscape:w-screen object-cover"
           src="~/assets/images/common/space-stars.svg"
           alt=""
         />
@@ -23,11 +23,10 @@
         <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">
           <HomeWelcome />
         </div>
-        <div class="gateway-bg">
-          <HomeGateway class="bg-space-gray-dark" />
-        </div>
       </div>
     </div>
+
+    <HomeGateway />
 
     <HomeBecomeAStar class="pt-32 sm:pt-64 pb-32 sm:pb-64" />
 
@@ -78,9 +77,6 @@ definePageMeta({
     rgba(8, 16, 41, 1) 50%,
     rgba(8, 16, 41, 0) 100%
   );
-}
-.gateway-bg {
-  @apply bg-space-gray-dark;
 }
 .sky-gradient {
   background: linear-gradient(

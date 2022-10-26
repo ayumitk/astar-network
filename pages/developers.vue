@@ -1,7 +1,7 @@
 <template>
   <div class="space-gradient relative">
     <img
-      class="absolute z-[1] mix-blend-overlay bottom-0"
+      class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
       src="~/assets/images/common/space-cloud.png"
       alt=""
     />
@@ -13,7 +13,7 @@
       />
     </ScrollParallax>
     <img
-      class="fixed z-[3] mix-blend-screen"
+      class="fixed z-[3] mix-blend-screen portrait:h-screen landscape:w-screen object-cover"
       src="~/assets/images/common/space-stars.svg"
       alt=""
     />
@@ -42,7 +42,7 @@ definePageMeta({
   @apply w-full h-full absolute content-[""] z-[0];
   background: linear-gradient(
     180deg,
-    rgba(8, 16, 41, 0) 50%,
+    rgba(8, 16, 41, 0) 30%,
     rgba(8, 16, 41, 100) 100%
   );
 }

@@ -24,13 +24,13 @@
             <div
               class="flex items-center justify-between px-4 py-5 sm:px-6 sm:py-8"
             >
-              <div>
+              <a href="/" class="block">
                 <img
                   class="h-10 w-auto sm:h-14"
                   src="~/assets/images/common/logo.svg"
                   alt="Astar Network"
                 />
-              </div>
+              </a>
               <div class="-mr-2 sm:mr-0">
                 <PopoverButton
                   class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"

@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:flex items-end relative z-10">
+  <div class="sm:flex lg:items-end relative z-10">
     <div class="shrink-0 mb-8 sm:mb-0" data-aos="zoom-out-right">
       <img
         class="mx-auto max-w-[280px] sm:max-w-[350px] lg:max-w-full float-animation"

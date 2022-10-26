@@ -6,7 +6,7 @@
     <carousel :items-to-show="1.2">
       <slide v-for="item in testimonials" class="px-2 sm:px-8">
         <div
-          class="bg-gradient w-full rounded-3xl text-white px-4 py-6 sm:px-12 sm:py-12"
+          class="bg-gradient w-full rounded-3xl text-white px-4 py-6 sm:px-12 sm:py-12 h-full"
         >
           <div class="relative">
             <!-- <img
@@ -29,8 +29,8 @@
                   </div>
                   <div class="mt-3 md:mt-0 md:ml-4 md:flex md:items-center">
                     <div class="text-left leading-tight">
-                      <div class="text-xl font-medium">{{ item.name }}</div>
-                      <div class="text-base">{{ item.company }}</div>
+                      <div class="sm:text-xl font-medium">{{ item.name }}</div>
+                      <div class="text-sm sm:text-base">{{ item.company }}</div>
                     </div>
                   </div>
                 </div>

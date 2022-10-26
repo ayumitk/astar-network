@@ -1,6 +1,6 @@
 <template>
   <ul
-    class="max-w-5xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 relative z-10 sm:-mt-28"
+    class="max-w-5xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 relative z-10 lg:-mt-28"
   >
     <li v-for="(item, index) in links">
       <a

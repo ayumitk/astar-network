@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply text-gray-200 bg-space-gray-dark leading-relaxed text-base;
   }
@@ -21,7 +25,6 @@
       #0ae2ff 74.93%
     );
   }
-
   .title {
     @apply font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight;
   }
@@ -71,7 +74,7 @@
       transform: translateY(-30px);
     }
   }
-  
+
   .float-animation {
     animation: 2s float infinite;
   }

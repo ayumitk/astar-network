@@ -2,7 +2,7 @@
   <div class="relative z-10">
     <div data-aos="zoom-out-right" class="absolute z-[4]">
       <img
-        class="h-80 lg:h-auto"
+        class="max-h-80 sm:max-h-full lg:h-auto"
         src="~/assets/images/developers/multichain-bg.svg"
         alt=""
       />
