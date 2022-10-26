@@ -2,9 +2,11 @@
   <div class="relative">
     <div class="bg-black">
       <div class="absolute z-0 w-screen h-screen flex items-center">
-        <video poster="" webkit-playsinline playsinline muted autoplay loop>
-          <source src="~/assets/videos/astar.mp4" type="video/mp4" />
-        </video>
+        <ScrollParallax :speed="0.25">
+          <video webkit-playsinline playsinline muted autoplay loop>
+            <source src="~/assets/videos/astar.mp4" type="video/mp4" />
+          </video>
+        </ScrollParallax>
       </div>
       <div class="space-gradient mix-blend-screen">
         <img
@@ -58,6 +60,8 @@
 </template>
 
 <script setup lang="ts">
+import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
+
 definePageMeta({
   layout: "home",
   pageTitle: "Home",

@@ -25,7 +25,7 @@
       </div>
       <div class="shrink-0">
         <img
-          src="~/assets/images/community/space=lab.svg"
+          src="~/assets/images/community/space-lab.svg"
           alt=""
           class="rounded-b-3xl lg:rounded-r-3xl"
         />

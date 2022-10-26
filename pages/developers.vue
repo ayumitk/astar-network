@@ -5,14 +5,16 @@
       src="~/assets/images/common/space-cloud.png"
       alt=""
     />
+    <ScrollParallax :speed="0.2">
+      <img
+        class="absolute z-[2] right-0 max-h-[40vh] lg:max-h-[80vh]"
+        src="~/assets/images/developers/hero.svg"
+        alt=""
+      />
+    </ScrollParallax>
     <img
-      class="fixed z-[2] mix-blend-screen"
+      class="fixed z-[3] mix-blend-screen"
       src="~/assets/images/common/space-stars.svg"
-      alt=""
-    />
-    <img
-      class="absolute z-[3] right-0 max-h-[40vh] lg:max-h-[80vh]"
-      src="~/assets/images/developers/hero.svg"
       alt=""
     />
     <DevelopersHero />
@@ -25,6 +27,8 @@
 </template>
 
 <script setup lang="ts">
+import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
+
 definePageMeta({
   pageTitle: "Developers",
   slug: "developers",
