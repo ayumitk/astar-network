@@ -6,10 +6,9 @@
     <ul
       class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-2 sm:gap-y-20"
     >
-      <li class="" v-for="(item, index) in building">
-        <a
-          href=""
-          class="block hover:brightness-125 transition rounded-3xl mb-16 sm:mb-0 h-full"
+      <template v-for="(item, index) in building">
+        <li
+          class="hover:brightness-125 transition rounded-3xl mb-16 sm:mb-0"
           :class="
             index === 4
               ? `text-space-gray-dark ${item.color}`
@@ -18,21 +17,21 @@
           data-aos="flip-left"
           :data-aos-delay="index * 100"
         >
-          <div class="mb-2 -mt-12 float-right w-full">
+          <a href="" class="block">
             <img
-              class="mx-auto w-32 sm:w-auto"
+              class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
               :src="useAsset('developers/' + item.image)"
               alt=""
             />
-          </div>
-          <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
-            <h3 class="text-lg sm:text-xl font-bold leading-tight">
-              {{ item.title }}
-              <span class="whitespace-nowrap">-></span>
-            </h3>
-          </div>
-        </a>
-      </li>
+            <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">
+                {{ item.title }}
+                <span class="whitespace-nowrap">-></span>
+              </h3>
+            </div>
+          </a>
+        </li>
+      </template>
     </ul>
   </div>
 </template>

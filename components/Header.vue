@@ -48,7 +48,7 @@
               </PopoverButton>
 
               <a href="/community" class="nav-item">Community</a>
-              <a href="#" class="nav-item">Ecosystem</a>
+              <!-- <a href="#" class="nav-item">Ecosystem</a> -->
               <!-- <a href="#" class="nav-item">About</a> -->
             </nav>
             <div class="md:ml-12">

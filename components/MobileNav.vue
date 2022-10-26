@@ -86,13 +86,13 @@
                     >Community</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     href="#"
                     class="text-white block border-t border-gray-600 px-6 py-5"
                     >Ecosystem</a
                   >
-                </li>
+                </li> -->
               </ul>
               <div class="py-12 px-6">
                 <Button

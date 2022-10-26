@@ -31,7 +31,7 @@
 
     <HomeRecommendedReading class="pb-24" />
     <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
-    <div class="bg-white">
+    <div class="bg-white relative z-10">
       <div class="sky-gradient">
         <div class="sky-gradient-inner">
           <HomeFeatures class="pt-12 pb-32 sm:pb-56" />

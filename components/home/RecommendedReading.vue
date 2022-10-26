@@ -9,9 +9,9 @@
       Learn more about where and how a-star was born.
     </p>
     <ul class="grid sm:grid-cols-3 gap-x-4 lg:gap-x-8 mt-12 sm:mt-28">
-      <li class="mb-16 sm:mb-0" v-for="(item, index) in reading">
-        <div
-          class="rounded-3xl bg-space-gray"
+      <template v-for="(item, index) in reading">
+        <li
+          class="mb-16 sm:mb-0 rounded-3xl bg-space-gray"
           data-aos="flip-left"
           :data-aos-delay="index * 200"
         >
@@ -29,8 +29,8 @@
               >Learn more -></a
             >
           </div>
-        </div>
-      </li>
+        </li>
+      </template>
     </ul>
 
     <div
@@ -59,7 +59,7 @@
           type="email"
           autocomplete="email"
           required
-          class="mb-2 sm:mb-0 w-full rounded-xl border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-space-sky focus:ring-space-sky sm:max-w-xs mr-2"
+          class="mb-2 sm:mb-0 w-full rounded-xl border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-space-sky focus:ring-space-sky sm:max-w-xs mr-2 text-gray-900"
           placeholder="Enter your email"
         />
         <Button class="w-full sm:w-auto">Subscribe</Button>

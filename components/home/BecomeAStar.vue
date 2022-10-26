@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="text-center mb-20">
       <small class="block text-lg sm:text-3xl font-medium">
         Join the fast growing ecosystem

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-12">
       <span>Testimonials</span>
     </h2>
