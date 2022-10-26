@@ -1,10 +1,12 @@
 <template>
   <div class="relative z-10">
-    <img
-      class="absolute z-[4] h-80 lg:h-auto"
-      src="~/assets/images/developers/multichain-bg.svg"
-      alt=""
-    />
+    <div data-aos="zoom-out-right" class="absolute z-[4]">
+      <img
+        class="h-80 lg:h-auto"
+        src="~/assets/images/developers/multichain-bg.svg"
+        alt=""
+      />
+    </div>
     <div
       class="max-w-7xl mx-auto px-4 sm:px-6 lg:flex items-center relative z-10 pt-80"
     >
