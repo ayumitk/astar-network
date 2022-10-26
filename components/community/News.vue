@@ -15,7 +15,9 @@
           </div>
           <span class="text-gray-400 text-sm">{{ item.publishedDate }}</span>
           <h3 class="text-lg font-medium mb-2">{{ item.title }}</h3>
-          <p class="text-gray-400 mb-2 text-sm">{{ item.description }}</p>
+          <p class="text-gray-400 mb-2 text-sm line-clamp-3">
+            {{ item.description }}
+          </p>
           <span
             class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
           >
@@ -93,11 +95,4 @@ const news = [
 ];
 </script>
 
-<style scoped lang="postcss">
-p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
-</style>
+<style scoped lang="postcss"></style>
