@@ -36,14 +36,14 @@ const features = [
   },
   {
     title: "Basic Income For Developers",
-    description: `We invented the "Build2Earn" concept where we distribute ASTR tokens based on the developers' contribution. By making smart contracts, you are rewarded through our innovation we can "dApp Staking".`,
+    description: `We invented the "Build2Earn" concept where we distribute ASTR tokens based on the developers' contribution. By making smart contracts, you are rewarded through our innovation we call "dApp Staking".`,
     href: "#",
     image: "features-basic-income.svg",
   },
   {
     title: "Web2 + Web3",
     description:
-      "Astar supports both web2 and web3 developers. Through our multivirtual virtual machine solution, developers can deploy smart contracts both on Ethereum Virtual Machine and WebAssembly.",
+      "Astar supports both web2 and web3 developers. Through our multivirtual machine solution, developers can deploy smart contracts both on Ethereum Virtual Machine and WebAssembly.",
     href: "#",
     image: "features-web2-web3.svg",
   },
