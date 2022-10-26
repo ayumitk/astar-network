@@ -9,26 +9,23 @@
       Learn more about where and how a-star was born.
     </p>
     <ul class="grid sm:grid-cols-3 gap-x-4 lg:gap-x-8 mt-12 sm:mt-28">
-      <li class="mb-16 sm:mb-0" v-for="(item, index) in reading">
-        <div
-          class="rounded-3xl bg-space-gray"
-          data-aos="flip-left"
-          :data-aos-delay="index * 200"
-        >
-          <div class="-mx-5 -mt-12 -mb-4">
-            <img :src="useAsset('home/' + item.image)" :alt="item.title" />
-          </div>
-          <div class="px-6 lg:px-7 pb-12">
-            <h3 class="text-xl lg:text-2xl font-bold leading-tight">
-              {{ item.title }}
-            </h3>
-            <p class="my-3">{{ item.description }}</p>
-            <a
-              :href="item.href"
-              class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition"
-              >Learn more -></a
-            >
-          </div>
+      <li
+        class="rounded-3xl mb-16 sm:mb-0 bg-space-gray"
+        v-for="item in reading"
+      >
+        <div class="-mx-5 -mt-12 -mb-4">
+          <img :src="useAsset('home/' + item.image)" :alt="item.title" />
+        </div>
+        <div class="px-6 lg:px-7 pb-12">
+          <h3 class="text-xl lg:text-2xl font-bold leading-tight">
+            {{ item.title }}
+          </h3>
+          <p class="my-3">{{ item.description }}</p>
+          <a
+            :href="item.href"
+            class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition"
+            >Learn more -></a
+          >
         </div>
       </li>
     </ul>

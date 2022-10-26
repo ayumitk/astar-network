@@ -1,12 +1,10 @@
 <template>
   <div class="relative">
-    <div data-aos="zoom-out-left" class="absolute right-4 z-[4]">
-      <img
-        class="h-48 lg:h-auto float-animation"
-        src="~/assets/images/developers/toolkit-bg.svg"
-        alt=""
-      />
-    </div>
+    <img
+      class="absolute right-4 z-[4] h-48 lg:h-auto"
+      src="~/assets/images/developers/toolkit-bg.svg"
+      alt=""
+    />
     <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 pt-40">
       <h2 class="title text-center mb-8 sm:mb-12">
         <span>Reach into <br />Astar Developer Toolkit</span>

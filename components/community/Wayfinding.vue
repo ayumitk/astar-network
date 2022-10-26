@@ -2,14 +2,12 @@
   <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-8 sm:mb-16"><span>Wayfinding</span></h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
-      <li v-for="(item, index) in social">
+      <li v-for="item in social">
         <a
           :href="item.href"
           target="_blank"
           rel="noopener"
           class="bg-space-gray block rounded-3xl text-center py-6 sm:py-8 px-2 sm:px-4 hover:bg-space-gray-lighter transition"
-          data-aos="flip-left"
-          :data-aos-delay="index * 100"
         >
           <component
             :is="item.icon"

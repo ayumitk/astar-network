@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 sm:px-6 relative z-10 text-center" data-aos="fade-up">
+  <div class="px-4 sm:px-6 relative z-10 text-center">
     <div
       class="gradient-outlined-box lg:inline-flex items-center justify-center"
     >

@@ -5,9 +5,7 @@
     >
       <span>The Gateway <br />in the multichain era</span>
     </h2>
-    <div data-aos="fade-up">
-      <img src="~/assets/images/home/gateway.svg" alt="" />
-    </div>
+    <div><img src="~/assets/images/home/gateway.svg" alt="" /></div>
   </div>
 </template>
 

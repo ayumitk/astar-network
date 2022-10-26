@@ -4,13 +4,8 @@
       <span>Advantages of Astar</span>
     </h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 sm:gap-y-16">
-      <li v-for="(item, index) in advantages">
-        <img
-          :src="useAsset('developers/' + item.image)"
-          alt=""
-          data-aos="fade-up"
-          :data-aos-delay="index * 100"
-        />
+      <li v-for="item in advantages">
+        <img :src="useAsset('developers/' + item.image)" alt="" />
         <h3 class="font-bold text-lg sm:text-xl mt-4 mb-2 leading-tight">
           {{ item.name }}
         </h3>

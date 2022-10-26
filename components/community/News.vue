@@ -4,9 +4,9 @@
     <ul
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 sm:gap-y-20"
     >
-      <li v-for="(item, index) in news">
+      <li v-for="item in news">
         <a :href="item.href" target="_blank" rel="noopener" class="block group">
-          <div class="mb-4" data-aos="flip-left" :data-aos-delay="index * 100">
+          <div class="mb-4">
             <img
               :src="useAsset('community/medium/' + item.id + '.png')"
               :alt="item.title"

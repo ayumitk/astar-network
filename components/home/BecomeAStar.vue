@@ -11,15 +11,9 @@
       </span>
     </h2>
     <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-8">
-      <li v-for="(item, index) in developers">
+      <li v-for="item in developers">
         <div class="mb-4">
-          <img
-            class="mx-auto"
-            :src="useAsset('home/' + item.image)"
-            alt=""
-            data-aos="fade-up"
-            :data-aos-delay="index * 200"
-          />
+          <img class="mx-auto" :src="useAsset('home/' + item.image)" alt="" />
         </div>
         <h3
           class="text-2xl font-bold text-center sm:text-left"

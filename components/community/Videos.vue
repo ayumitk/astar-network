@@ -11,7 +11,7 @@
         target="_blank"
         rel="noopener"
       >
-        <div class="sm:mr-5" data-aos="flip-left">
+        <div class="sm:mr-5">
           <img
             :src="`http://img.youtube.com/vi/${videos[0].id}/maxresdefault.jpg`"
             :alt="videos[0].title"
@@ -42,11 +42,7 @@
             target="_blank"
             rel="noopener"
           >
-            <div
-              :class="index === 0 ? 'mr-5' : ''"
-              data-aos="flip-left"
-              :data-aos-delay="index * 100"
-            >
+            <div :class="index === 0 ? 'mr-5' : ''">
               <img
                 :src="`http://img.youtube.com/vi/${video.id}/maxresdefault.jpg`"
                 :alt="video.title"
