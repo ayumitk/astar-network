@@ -2,15 +2,17 @@
   <ul
     class="max-w-5xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 relative z-10 sm:-mt-28"
   >
-    <li
-      v-for="(item, index) in links"
-      :class="item.color"
-      class="rounded-3xl text-center shadow-xl"
-    >
+    <li v-for="(item, index) in links">
       <a
         :href="item.href"
-        class="py-12 px-6 h-full flex items-center justify-center"
-        :class="index === 2 ? 'text-space-gray-dark' : 'text-white'"
+        class="py-12 px-6 h-full flex items-center justify-center rounded-3xl text-center shadow-xl"
+        :class="
+          index === 2
+            ? `text-space-gray-dark ${item.color}`
+            : `text-white ${item.color}`
+        "
+        data-aos="flip-left"
+        :data-aos-delay="index * 200"
       >
         <div>
           <span class="block text-2xl font-bold leading-tight">{{

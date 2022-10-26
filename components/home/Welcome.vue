@@ -1,8 +1,8 @@
 <template>
   <div class="sm:flex items-end relative z-10">
-    <div class="shrink-0 mb-8 sm:mb-0">
+    <div class="shrink-0 mb-8 sm:mb-0" data-aos="zoom-out-right">
       <img
-        class="mx-auto max-w-[280px] sm:max-w-[350px] lg:max-w-full"
+        class="mx-auto max-w-[280px] sm:max-w-[350px] lg:max-w-full float-animation"
         src="~/assets/images/home/welcome-astronaut.svg"
         alt=""
       />
@@ -20,7 +20,11 @@
         </p>
       </div>
       <dl class="shrink-0">
-        <div class="flex flex-col mb-12 xl:mb-16">
+        <div
+          class="flex flex-col mb-12 xl:mb-16"
+          data-aos="zoom-out-left"
+          data-aos-delay="200"
+        >
           <dt class="order-2 mt-2 text-3xl lg:text-4xl font-bold">
             <span>DApps</span>
           </dt>
@@ -32,7 +36,11 @@
             />
           </dd>
         </div>
-        <div class="flex flex-col">
+        <div
+          class="flex flex-col"
+          data-aos="zoom-out-left"
+          data-aos-delay="300"
+        >
           <dt class="order-2 mt-2 text-2xl lg:text-3xl font-bold">
             <span>Community Members</span>
           </dt>
