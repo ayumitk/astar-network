@@ -1,12 +1,12 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <h2
       class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-center title"
     >
       <span>Recommended Reading</span>
     </h2>
     <p class="sm:text-xl text-center mt-4">
-      Learn more about where and how a-star was born.
+      Learn more about where and how Astar was born.
     </p>
     <ul class="grid sm:grid-cols-3 gap-x-4 lg:gap-x-8 mt-12 sm:mt-28">
       <template v-for="(item, index) in reading">

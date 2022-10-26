@@ -13,10 +13,10 @@
           Welcome to the leading multichain smart contracts platform
         </h2>
         <p class="text-xl">
-          Astar is a blockchian built for developers and by developers. Our
-          innovative developer basic income and multivirtual virtual machine
-          allow developers to make a scalable application for DeFi, NFTs, Web3
-          and more.
+          Astar Network is a blockchian built for developers and by developers.
+          Our innovative developer basic income and multivirtual machine allow
+          developers to make scalable and secured applications for DeFi, NFTs,
+          Web3 and more.
         </p>
       </div>
       <dl class="shrink-0">
