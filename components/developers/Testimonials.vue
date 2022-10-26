@@ -59,22 +59,10 @@ const testimonials = [
     image: "ben-white.jpg",
   },
   {
-    name: "Judith Black",
-    company: "Workcation",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
-    image: "dummy.jpg",
-  },
-  {
-    name: "Judith Black",
-    company: "Workcation",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
-    image: "dummy.jpg",
-  },
-  {
-    name: "Judith Black",
-    company: "Workcation",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis..",
-    image: "dummy.jpg",
+    name: "Miko Matsumura",
+    company: "General, Partners of Gumi Cryptos",
+    text: "One of the most significant problems left unsolved by Satoshi Nakamoto has been to optimize developer incentives for contributing to projects. Astar has shown incredible innovation in this.",
+    image: "miko-matsumura.jpg",
   },
 ];
 </script>
