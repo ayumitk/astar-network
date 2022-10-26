@@ -11,7 +11,9 @@
           Build Ethereum and native dApps on Astar and be the part of multichain
           innovation.
         </p>
-        <ul class="flex justify-center sm:justify-start mt-12 space-x-2">
+        <ul
+          class="hidden sm:flex justify-center sm:justify-start mt-12 space-x-2"
+        >
           <li v-for="item in hero">
             <Button
               color="secondary"

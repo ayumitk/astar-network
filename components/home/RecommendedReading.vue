@@ -37,7 +37,7 @@
       class="gradient-outlined-box max-w-5xl mx-auto mt-12 lg:mt-24 sm:flex justify-center items-center p-8 lg:p-12 rounded-3xl sm:space-x-4 lg:space-x-6"
     >
       <div class="mb-4 sm:mb-0">
-        <h3 class="font-bold text-2xl">Receive newsletter</h3>
+        <h3 class="font-bold text-2xl leading-tight">Receive newsletter</h3>
         <p>
           Unsubscribe at any time.
           <a

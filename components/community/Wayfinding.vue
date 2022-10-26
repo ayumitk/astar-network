@@ -13,7 +13,7 @@
         >
           <component
             :is="item.icon"
-            class="h-10 sm:h-12 w-10 sm:w-12 mx-auto my-4"
+            class="h-10 sm:h-12 w-10 sm:w-12 mx-auto my-2 sm:my-4"
             :class="item.color"
             aria-hidden="true"
           />

@@ -4,7 +4,7 @@
   >
     <div class="max-w-7xl px-4 sm:px-6 pt-12">
       <h1
-        class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] drop-shadow tracking-tight"
+        class="text-3xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] drop-shadow tracking-tight"
       >
         The Future of Smart Contracts for Multichain.
       </h1>
