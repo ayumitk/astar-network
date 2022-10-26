@@ -43,9 +43,9 @@ const Discord = resolveComponent("IconDiscord");
 const Docs = resolveComponent("IconDocumentation");
 
 const hero = [
-  { name: "GitHub", href: "#", icon: Github },
-  { name: "Docs", href: "#", icon: Docs },
-  { name: "Discord", href: "#", icon: Discord },
+  { name: "GitHub", href: "https://github.com/AstarNetwork", icon: Github },
+  { name: "Docs", href: "https://docs.astar.network/", icon: Docs },
+  { name: "Discord", href: "https://discord.gg/Z3nC9U4", icon: Discord },
 ];
 </script>
 

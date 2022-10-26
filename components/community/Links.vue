@@ -5,6 +5,8 @@
     <li v-for="(item, index) in links">
       <a
         :href="item.href"
+        target="_blank"
+        rel="noopener"
         class="py-12 px-6 h-full flex items-center justify-center rounded-3xl text-center shadow-xl"
         :class="
           index === 2
