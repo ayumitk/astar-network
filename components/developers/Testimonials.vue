@@ -6,7 +6,7 @@
     <carousel :items-to-show="1.2">
       <slide v-for="item in testimonials" class="px-2 sm:px-8">
         <div
-          class="bg-gradient w-full rounded-3xl text-white px-4 py-6 sm:px-12 sm:py-12 h-full"
+          class="bg-gradient w-full rounded-3xl text-white px-4 py-6 sm:px-12 sm:py-12 h-full flex items-center"
         >
           <div class="relative">
             <!-- <img
