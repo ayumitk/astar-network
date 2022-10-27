@@ -60,7 +60,7 @@ const testimonials = [
   },
   {
     name: "Miko Matsumura",
-    company: "General, Partners of Gumi Cryptos",
+    company: "Managing Partner, gumi Cryptos Capital",
     text: "One of the most significant problems left unsolved by Satoshi Nakamoto has been to optimize developer incentives for contributing to projects. Astar has shown incredible innovation in this.",
     image: "miko-matsumura.jpg",
   },
