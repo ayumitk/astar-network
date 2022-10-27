@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="mx-auto max-w-6xl pb-12 px-4 sm:px-6 lg:pb-16 relative z-10"
+    class="mx-auto max-w-6xl pb-12 px-4 sm:px-6 lg:pb-16"
     :class="page === 'home' ? 'text-white' : 'text-gray-500'"
   >
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

@@ -2,9 +2,11 @@
   <div class="overflow-hidden">
     <Header />
     <slot />
-    <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
-    <div class="bg-white">
-      <Footer />
+    <div class="relative z-10">
+      <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
+      <div class="bg-white">
+        <Footer />
+      </div>
     </div>
   </div>
 </template>

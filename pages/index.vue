@@ -31,27 +31,30 @@
     <HomeBecomeAStar class="pt-32 sm:pt-64 pb-32 sm:pb-64" />
 
     <HomeRecommendedReading class="pb-24" />
-    <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
-    <div class="bg-white relative z-10">
-      <div class="sky-gradient">
-        <div class="sky-gradient-inner">
-          <HomeFeatures class="pt-12 pb-32 sm:pb-56" />
-          <HomeBackers />
-          <img
-            class="w-full"
-            src="~/assets/images/home/footer-sky.svg"
-            alt=""
-          />
-          <img
-            class="w-full"
-            src="~/assets/images/home/footer-landscape.svg"
-            alt=""
-          />
+
+    <div class="relative z-10">
+      <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
+      <div class="bg-white">
+        <div class="sky-gradient">
+          <div class="sky-gradient-inner">
+            <HomeFeatures class="pt-12 pb-32 sm:pb-56" />
+            <HomeBackers />
+            <img
+              class="w-full"
+              src="~/assets/images/home/footer-sky.svg"
+              alt=""
+            />
+            <img
+              class="w-full"
+              src="~/assets/images/home/footer-landscape.svg"
+              alt=""
+            />
+          </div>
         </div>
-      </div>
-      <div class="footer">
-        <div class="footer-inner pt-12 sm:pt-28">
-          <Footer page="home" />
+        <div class="footer">
+          <div class="footer-inner pt-12 sm:pt-28">
+            <Footer page="home" />
+          </div>
         </div>
       </div>
     </div>
