@@ -49,6 +49,11 @@ const logos = [
   { name: "Talisman", image: "talisman.svg" },
   { name: "Metamask", image: "metamask.svg" },
   { name: "Polkadot.js", image: "polkadot.svg" },
+  { name: "Solidity", image: "solidity.png" },
+  { name: "ink!", image: "ink.svg" },
+  { name: "Remix", image: "remix.svg" },
+  { name: "HardHat", image: "hardhat.svg" },
+  { name: "OpenBrush", image: "openbrush.svg" },
 ];
 </script>
 
