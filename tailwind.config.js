@@ -53,8 +53,8 @@ module.exports = {
           DEFAULT:"#0AE2FF",
         },
         'space-teal':{
-          light:"#00FFD1",
-          lighter:"#00FFD1",
+          light:"#C0FFF4",
+          lighter:"#80FFE8",
           DEFAULT:"#00FFD1",
         }
       },
