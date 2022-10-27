@@ -64,6 +64,12 @@ const testimonials = [
     text: "One of the most significant problems left unsolved by Satoshi Nakamoto has been to optimize developer incentives for contributing to projects. Astar has shown incredible innovation in this.",
     image: "miko-matsumura.jpg",
   },
+  {
+    name: "Michael Garland",
+    company: "Product Manager, Alchemy",
+    text: "It’s rare that we find teams and products as obssesed with improving Web3 developer experience as we are at Alchemy, but Astar is exactly that. Features like dApp Staking and XCMP are gamechangers for developers, which is why we’re so excited to be a part of the Astar ecosystem",
+    image: "michael-garland.jpg",
+  },
 ];
 </script>
 
