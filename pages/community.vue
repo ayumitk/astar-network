@@ -11,7 +11,7 @@
       alt=""
     />
     <img
-      class="fixed z-[3] mix-blend-screen portrait:h-screen landscape:w-screen object-cover"
+      class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
       src="~/assets/images/common/space-stars.svg"
       alt=""
     />
