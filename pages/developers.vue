@@ -2,6 +2,7 @@
   <div class="space-gradient relative">
     <nuxt-img
       format="webp"
+      quality="90"
       class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
       src="/common/space-cloud.png"
       alt=""

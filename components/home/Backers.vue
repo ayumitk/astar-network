@@ -12,6 +12,7 @@
         <nuxt-img
           format="webp"
           quality="90"
+          width="400"
           class="h-12 w-32 lg:w-48 object-contain"
           :src="`/backers/${item.image}`"
           :alt="item.name"

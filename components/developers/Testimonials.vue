@@ -9,11 +9,6 @@
           class="bg-gradient w-full rounded-3xl text-white px-4 py-6 sm:px-12 sm:py-12 h-full flex items-center"
         >
           <div class="relative">
-            <!-- <img
-              class="mx-auto h-10 sm:h-14"
-              src="https://tailwindui.com/img/logos/workcation-logo-white.svg"
-              alt="Workcation"
-            /> -->
             <blockquote class="pt-6 pb-4">
               <div class="mx-auto text-center sm:text-xl sm:leading-9">
                 <p>{{ item.text }}</p>
@@ -21,10 +16,13 @@
               <footer class="mt-8">
                 <div class="md:flex md:items-center md:justify-center">
                   <div class="md:flex-shrink-0">
-                    <img
+                    <nuxt-img
+                      format="webp"
+                      quality="90"
+                      width="128"
                       class="mx-auto h-16 w-16 rounded-full"
-                      :src="useAsset('developers/testimonials/' + item.image)"
-                      alt=""
+                      :src="`/testimonials/${item.image}`"
+                      :alt="item.name"
                     />
                   </div>
                   <div class="mt-3 md:mt-0 md:ml-4 md:flex md:items-center">

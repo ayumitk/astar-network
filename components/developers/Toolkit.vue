@@ -27,9 +27,12 @@
           class="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-20 sm:grid-cols-4 lg:grid-cols-5"
         >
           <div v-for="item in logos" class="flex items-center justify-center">
-            <img
+            <nuxt-img
+              format="webp"
+              quality="90"
+              width="400"
               class="h-12 w-32 lg:w-48 object-contain"
-              :src="useAsset('developers/logos/' + item.image)"
+              :src="`/toolkit/${item.image}`"
               :alt="item.name"
             />
           </div>
