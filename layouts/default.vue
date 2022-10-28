@@ -3,7 +3,13 @@
     <Header />
     <slot />
     <div class="relative z-10">
-      <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
+      <img
+        class="w-full"
+        src="~/assets/images/common/cloud.svg"
+        alt=""
+        width="2000"
+        height="464"
+      />
       <div class="bg-white">
         <Footer />
       </div>

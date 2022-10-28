@@ -20,7 +20,7 @@
           focus
           class="absolute inset-x-0 top-0 z-50 origin-top-right transform transition"
         >
-          <div class="bg-space-gray-dark shadow-lg min-h-screen">
+          <div class="bg-space-gray-dark shadow-lg min-h-screen pb-96">
             <div
               class="flex items-center justify-between px-4 py-5 sm:px-6 sm:py-8"
             >
@@ -29,6 +29,8 @@
                   class="h-10 w-auto sm:h-14"
                   src="~/assets/images/common/logo.svg"
                   alt="Astar Network"
+                  width="188"
+                  height="60"
                 />
               </a>
               <div class="-mr-2 sm:mr-0">

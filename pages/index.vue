@@ -39,7 +39,13 @@
     <HomeRecommendedReading class="pb-24" />
 
     <div class="relative z-10">
-      <img class="w-full" src="~/assets/images/common/cloud.svg" alt="" />
+      <img
+        class="w-full"
+        src="~/assets/images/common/cloud.svg"
+        alt=""
+        width="2000"
+        height="464"
+      />
       <div class="bg-white">
         <div class="sky-gradient">
           <div class="sky-gradient-inner">
@@ -49,11 +55,15 @@
               class="w-full"
               src="~/assets/images/home/footer-sky.svg"
               alt=""
+              width="1728"
+              height="290"
             />
             <img
               class="w-full"
               src="~/assets/images/home/footer-landscape.svg"
               alt=""
+              width="1728"
+              height="220"
             />
           </div>
         </div>
