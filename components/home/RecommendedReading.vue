@@ -66,7 +66,7 @@
           class="mb-2 sm:mb-0 w-full rounded-xl border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-space-sky focus:ring-space-sky sm:max-w-xs mr-2 text-gray-900"
           placeholder="Enter your email"
         />
-        <Button class="w-full sm:w-auto">Subscribe</Button>
+        <Button href="#" class="w-full sm:w-auto">Subscribe</Button>
       </form>
     </div>
   </div>
