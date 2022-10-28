@@ -19,7 +19,7 @@
           target="_blank"
           rel="noopener"
         >
-          Learn more
+          Learn more<span class="sr-only"> about Astar Space Lab</span>
           <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
         </Button>
       </div>

@@ -7,10 +7,13 @@
       <li v-for="(item, index) in news">
         <a :href="item.href" target="_blank" rel="noopener" class="block group">
           <div class="mb-4" data-aos="flip-left" :data-aos-delay="index * 100">
-            <img
-              :src="useAsset('community/medium/' + item.id + '.png')"
-              :alt="item.title"
+            <nuxt-img
+              format="webp"
+              quality="90"
+              width="760"
               class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
+              :src="`/medium/${item.id}.jpg`"
+              :alt="item.title"
             />
           </div>
           <span class="text-gray-400 text-sm">{{ item.publishedDate }}</span>
