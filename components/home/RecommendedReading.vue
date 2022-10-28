@@ -25,9 +25,13 @@
             <p class="my-3">{{ item.description }}</p>
             <a
               :href="item.href"
-              class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition"
-              >Learn more -></a
+              target="_blank"
+              rel="noopener"
+              class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition flex items-center"
             >
+              Learn more
+              <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+            </a>
           </div>
         </li>
       </template>
@@ -44,10 +48,10 @@
             href="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
             target="_blank"
             rel="noopener"
-            class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition whitespace-nowrap"
+            class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition whitespace-nowrap inline-flex items-center"
           >
             Privacy policy
-            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 inline-block" />
+            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
           </a>
         </p>
       </div>
@@ -74,21 +78,21 @@ const reading = [
     title: "Welcome to Astar",
     description:
       "Read the vision of Aster and lean about powerful blockchain technology that makes it possible.",
-    href: "#",
+    href: "https://docs.astar.network/docs/getting-started",
     image: "reading-astar.svg",
   },
   {
     title: "Discover the ASTR token",
     description:
       "Read Astar's original features and innovative features that unlock web3.",
-    href: "#",
+    href: "https://docs.astar.network/docs/about/token-economics/economics",
     image: "reading-token.svg",
   },
   {
     title: "Explore the ecosystem",
     description:
       "Learn more about Astar ecosystem and where we are heading to realise web3.",
-    href: "#",
+    href: "https://docs.astar.network/docs/ecosystem/",
     image: "reading-ecosystem.svg",
   },
 ];

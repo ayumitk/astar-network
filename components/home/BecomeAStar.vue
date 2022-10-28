@@ -30,10 +30,14 @@
         <p class="my-2">{{ item.description }}</p>
         <a
           :href="item.href"
+          target="_blank"
+          rel="noopener"
           :class="item.color"
-          class="hover:underline transition"
-          >Learn more -></a
+          class="hover:underline transition flex items-center"
         >
+          Learn more
+          <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+        </a>
       </li>
     </ul>
   </div>
@@ -45,28 +49,28 @@ const developers = [
     name: "Developer",
     image: "become-developer.svg",
     description: "Create a dApp or infrastructure to realise web3",
-    href: "#",
+    href: "https://docs.astar.network/docs/quickstart/",
     color: "text-space-pink hover:text-space-pink-lighter",
   },
   {
     name: "Collator",
     image: "become-collator.svg",
     description: "Run a node and support the network",
-    href: "#",
+    href: "https://docs.astar.network/docs/nodes/",
     color: "text-space-sky hover:text-space-sky-lighter",
   },
   {
     name: "Staker",
     image: "become-staker.svg",
-    description: "Organize data by signaling on subgraphs",
-    href: "#",
+    description: "Stake ASTR and earn ASTR",
+    href: "https://portal.astar.network/#/astar/dapp-staking/discover",
     color: "text-space-cyan hover:text-space-cyan-lighter",
   },
   {
     name: "Users",
     image: "become-users.svg",
     description: "Use ASTR and be a part of web3 movement",
-    href: "#",
+    href: "https://portal.astar.network/#/astar/assets",
     color: "text-space-teal hover:text-space-teal-lighter",
   },
 ];

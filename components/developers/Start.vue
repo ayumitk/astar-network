@@ -8,7 +8,7 @@
     >
       <template v-for="(item, index) in building">
         <li
-          class="hover:brightness-125 transition rounded-3xl mb-16 sm:mb-0"
+          class="transition rounded-3xl mb-16 sm:mb-0 group"
           :class="
             index === 4
               ? `text-space-gray-dark ${item.color}`
@@ -17,7 +17,25 @@
           data-aos="flip-left"
           :data-aos-delay="index * 100"
         >
-          <a href="" class="block">
+          <span v-if="item.href === ''" class="block">
+            <img
+              class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
+              :src="useAsset('developers/' + item.image)"
+              alt=""
+            />
+            <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
+              <h3 class="text-lg sm:text-xl font-bold leading-tight">
+                {{ item.title }}
+              </h3>
+            </div>
+          </span>
+          <a
+            v-else
+            :href="item.href"
+            class="block hover:brightness-125"
+            target="_blank"
+            rel="noopener"
+          >
             <img
               class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
               :src="useAsset('developers/' + item.image)"
@@ -41,31 +59,31 @@ const building = [
   {
     title: "Launch your Ethereum dApps",
     image: "building-ethereum.svg",
-    href: "#",
+    href: "https://docs.astar.network/docs/EVM/",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {
     title: "Launch your Wasm dApps",
     image: "building-wasm.svg",
-    href: "#",
+    href: "https://docs.astar.network/docs/wasm/",
     color: "bg-space-purple hover:bg-space-purple-lighter",
   },
   {
     title: "Run a collator",
     image: "building-collator.svg",
-    href: "#",
+    href: "https://docs.astar.network/docs/nodes/",
     color: "bg-space-blue hover:bg-space-blue-lighter",
   },
   {
     title: "Integrate an Exchange",
     image: "building-exchange.svg",
-    href: "#",
-    color: "bg-space-sky hover:bg-space-sky-lighter",
+    href: "",
+    color: "bg-space-sky",
   },
   {
     title: "DApps Template",
     image: "building-template.svg",
-    href: "#",
+    href: "https://github.com/AstarNetwork/wasm-showcase-dapps",
     color: "bg-space-cyan hover:bg-space-cyan-lighter",
   },
 ];

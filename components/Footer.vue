@@ -157,7 +157,7 @@ const social = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/AstarNetwork",
+    href: "https://github.com/AstarNetwork/Astar",
     icon: Github,
   },
   {

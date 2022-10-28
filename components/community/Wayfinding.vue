@@ -22,7 +22,7 @@
           >
             {{ item.type }}
           </span>
-          <h3 class="font-medium text-xl mt-2">{{ item.name }}</h3>
+          <h3 class="font-medium text-xl mt-1 sm:mt-2">{{ item.name }}</h3>
           <div class="stats leading-snug">
             <span class="font-bold text-xl mr-1.5">{{ item.stats }}</span>
             <small class="block">{{ item.unit }}</small>
@@ -81,9 +81,9 @@ const social = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/AstarNetwork",
+    href: "https://github.com/AstarNetwork/Astar",
     icon: Github,
-    stats: "85,032",
+    stats: "579",
     unit: "stars",
     type: "Engineering",
     color: "text-[#FAFAFA]",
