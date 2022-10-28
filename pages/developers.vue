@@ -1,8 +1,9 @@
 <template>
   <div class="space-gradient relative">
-    <img
+    <nuxt-img
+      format="webp"
       class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-      src="~/assets/images/common/space-cloud.png"
+      src="/common/space-cloud.png"
       alt=""
     />
     <ScrollParallax :speed="0.2">
