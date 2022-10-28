@@ -26,8 +26,10 @@
       <div class="shrink-0">
         <img
           src="~/assets/images/community/space-lab.svg"
-          alt=""
+          alt="Astar Space Lab"
           class="rounded-b-3xl lg:rounded-r-3xl"
+          width="929"
+          height="428"
         />
       </div>
     </div>

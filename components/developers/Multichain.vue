@@ -4,7 +4,9 @@
       <img
         class="max-h-80 sm:max-h-full lg:h-auto"
         src="~/assets/images/developers/multichain-bg.svg"
-        alt=""
+        alt="Multichain Future"
+        width="814"
+        height="498"
       />
     </div>
     <div
@@ -22,7 +24,12 @@
       <ul class="grid gap-12 lg:ml-28">
         <li v-for="item in future" class="flex">
           <div class="mr-8 shrink-0">
-            <img :src="useAsset('developers/' + item.image)" :alt="item.name" />
+            <img
+              :src="useAsset('developers/' + item.image)"
+              :alt="item.name"
+              width="60"
+              height="60"
+            />
           </div>
           <div>
             <h3 class="font-bold text-xl mb-1">{{ item.name }}</h3>

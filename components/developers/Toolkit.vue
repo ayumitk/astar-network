@@ -4,7 +4,9 @@
       <img
         class="h-48 lg:h-auto float-animation"
         src="~/assets/images/developers/toolkit-bg.svg"
-        alt=""
+        alt="Astar Developer Toolkit"
+        width="556"
+        height="294"
       />
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 pt-40">

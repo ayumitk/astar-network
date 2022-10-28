@@ -12,6 +12,8 @@
           :src="useAsset('home/' + item.image)"
           :alt="item.title"
           class="mx-auto"
+          width="614"
+          height="382"
         />
       </div>
       <div :class="index % 2 === 0 && 'sm:order-1'">

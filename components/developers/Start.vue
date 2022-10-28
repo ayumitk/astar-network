@@ -21,7 +21,9 @@
             <img
               class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
               :src="useAsset('developers/' + item.image)"
-              alt=""
+              :alt="item.title"
+              width="182"
+              height="184"
             />
             <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
               <h3 class="text-lg sm:text-xl font-bold leading-tight">
@@ -39,7 +41,9 @@
             <img
               class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
               :src="useAsset('developers/' + item.image)"
-              alt=""
+              :alt="item.title"
+              width="182"
+              height="184"
             />
             <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
               <h3 class="text-lg sm:text-xl font-bold leading-tight">

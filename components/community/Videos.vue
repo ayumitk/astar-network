@@ -51,6 +51,8 @@
                 :src="`http://img.youtube.com/vi/${video.id}/maxresdefault.jpg`"
                 :alt="video.title"
                 class="w-100 rounded-3xl group-hover:brightness-125"
+                width="1280"
+                height="720"
               />
             </div>
             <div>

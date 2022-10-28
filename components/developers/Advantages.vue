@@ -7,9 +7,11 @@
       <li v-for="(item, index) in advantages">
         <img
           :src="useAsset('developers/' + item.image)"
-          alt=""
+          :alt="item.name"
           data-aos="fade-up"
           :data-aos-delay="index * 100"
+          width="150"
+          height="130"
         />
         <h3 class="font-bold text-lg sm:text-xl mt-4 mb-2 leading-tight">
           {{ item.name }}

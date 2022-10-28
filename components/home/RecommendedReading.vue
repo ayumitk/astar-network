@@ -16,7 +16,12 @@
           :data-aos-delay="index * 200"
         >
           <div class="-mx-5 -mt-12 -mb-4">
-            <img :src="useAsset('home/' + item.image)" :alt="item.title" />
+            <img
+              :src="useAsset('home/' + item.image)"
+              :alt="item.title"
+              width="460"
+              height="370"
+            />
           </div>
           <div class="px-6 lg:px-7 pb-12">
             <h3 class="text-xl lg:text-2xl font-bold leading-tight">

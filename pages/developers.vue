@@ -6,18 +6,24 @@
       class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
       src="/common/space-cloud.png"
       alt=""
+      width="1728"
+      height="1281"
     />
     <ScrollParallax :speed="0.2">
       <img
         class="absolute z-[2] right-0 max-h-[40vh] lg:max-h-[80vh]"
         src="~/assets/images/developers/hero.svg"
-        alt=""
+        alt="Developers"
+        width="1106"
+        height="804"
       />
     </ScrollParallax>
     <img
       class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
       src="~/assets/images/common/space-stars.svg"
       alt=""
+      width="1728"
+      height="1728"
     />
     <DevelopersHero />
   </div>

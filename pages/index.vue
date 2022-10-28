@@ -15,11 +15,15 @@
           class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
           src="/common/space-cloud.png"
           alt=""
+          width="1728"
+          height="1281"
         />
         <img
           class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
           src="~/assets/images/common/space-stars.svg"
           alt=""
+          width="1728"
+          height="1728"
         />
         <HomeHero />
         <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">

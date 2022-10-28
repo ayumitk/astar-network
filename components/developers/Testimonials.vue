@@ -20,6 +20,7 @@
                       format="webp"
                       quality="90"
                       width="128"
+                      height="128"
                       class="mx-auto h-16 w-16 rounded-full"
                       :src="`/testimonials/${item.image}`"
                       :alt="item.name"

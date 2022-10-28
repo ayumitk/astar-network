@@ -4,7 +4,9 @@
       <img
         class="mx-auto max-w-[280px] sm:max-w-[350px] lg:max-w-full float-animation"
         src="~/assets/images/home/welcome-astronaut.svg"
-        alt=""
+        alt="Welcome to the leading multichain smart contracts platform"
+        width="450"
+        height="750"
       />
     </div>
     <div class="xl:flex px-4 sm:px-6 lg:mr-6">
@@ -32,7 +34,9 @@
             <img
               class="max-w-[300px] lg:max-w-full"
               src="~/assets/images/home/welcome-dapps.svg"
-              alt=""
+              alt="50+ DApps"
+              width="403"
+              height="133"
             />
           </dd>
         </div>
@@ -48,7 +52,9 @@
             <img
               class="max-w-[300px] lg:max-w-full"
               src="~/assets/images/home/welcome-community-members.svg"
-              alt=""
+              alt="100K Community Members"
+              width="505"
+              height="105"
             />
           </dd>
         </div>

@@ -16,9 +16,11 @@
           <img
             class="mx-auto"
             :src="useAsset('home/' + item.image)"
-            alt=""
+            :alt="item.name"
             data-aos="fade-up"
             :data-aos-delay="index * 200"
+            width="240"
+            height="210"
           />
         </div>
         <h3
