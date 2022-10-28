@@ -29,7 +29,7 @@
               rel="noopener"
               class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition flex items-center"
             >
-              Learn more
+              Learn more<span class="sr-only"> about {{ item.title }}</span>
               <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
             </a>
           </div>

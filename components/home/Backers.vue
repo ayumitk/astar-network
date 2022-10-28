@@ -11,10 +11,10 @@
       <div v-for="item in logos" class="flex items-center justify-center">
         <nuxt-img
           format="webp"
+          quality="90"
           class="h-12 w-32 lg:w-48 object-contain"
           :src="`/backers/${item.image}`"
           :alt="item.name"
-          sizes="sm:400px lg:400px"
         />
       </div>
     </div>
