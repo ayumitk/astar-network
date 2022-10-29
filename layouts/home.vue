@@ -96,6 +96,7 @@ useHead({
       content: meta.title,
     },
   ],
+  script: [{ src: "https://js.hsforms.net/forms/v2.js" }],
 });
 </script>
 

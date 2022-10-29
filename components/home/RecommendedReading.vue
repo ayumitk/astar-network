@@ -60,7 +60,8 @@
           </a>
         </p>
       </div>
-      <form class="sm:flex">
+      <div id="embedded-form" />
+      <!-- <form class="sm:flex">
         <label for="email-address" class="sr-only">Email address</label>
         <input
           id="email-address"
@@ -72,7 +73,7 @@
           placeholder="Enter your email"
         />
         <Button href="#" class="w-full sm:w-auto">Subscribe</Button>
-      </form>
+      </form> -->
     </div>
   </div>
 </template>
@@ -101,6 +102,15 @@ const reading = [
     image: "reading-ecosystem.svg",
   },
 ];
+
+onMounted(() => {
+  window.hbspt.forms.create({
+    region: "na1",
+    portalId: "23241464",
+    formId: "a11560ce-aacb-4ebb-87d6-b23cec0147a2",
+    target: "#embedded-form",
+  });
+});
 </script>
 
 <style scoped lang="postcss"></style>
