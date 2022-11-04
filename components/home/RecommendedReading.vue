@@ -42,7 +42,7 @@
       </template>
     </ul>
 
-    <div
+    <!-- <div
       class="gradient-outlined-box max-w-5xl mx-auto mt-12 lg:mt-24 sm:flex justify-center items-center p-8 lg:p-12 rounded-3xl sm:space-x-4 lg:space-x-6"
     >
       <div class="mb-4 sm:mb-0">
@@ -60,8 +60,7 @@
           </a>
         </p>
       </div>
-      <div id="embedded-form" />
-      <!-- <form class="sm:flex">
+      <form class="sm:flex">
         <label for="email-address" class="sr-only">Email address</label>
         <input
           id="email-address"
@@ -73,8 +72,8 @@
           placeholder="Enter your email"
         />
         <Button href="#" class="w-full sm:w-auto">Subscribe</Button>
-      </form> -->
-    </div>
+      </form>
+    </div> -->
   </div>
 </template>
 
@@ -102,15 +101,6 @@ const reading = [
     image: "reading-ecosystem.svg",
   },
 ];
-
-onMounted(() => {
-  window.hbspt.forms.create({
-    region: "na1",
-    portalId: "23241464",
-    formId: "a11560ce-aacb-4ebb-87d6-b23cec0147a2",
-    target: "#embedded-form",
-  });
-});
 </script>
 
 <style scoped lang="postcss"></style>
