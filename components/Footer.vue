@@ -40,7 +40,11 @@
 
     <div
       class="mt-16 border-t pt-8 lg:flex items-center justify-between"
-      :class="page === 'home' ? 'text-white' : 'border-gray-200'"
+      :class="
+        page === 'home'
+          ? 'text-white border-white border-opacity-30'
+          : 'border-gray-200'
+      "
     >
       <div class="flex space-x-6 order-2 justify-center">
         <a

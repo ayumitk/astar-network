@@ -1,6 +1,8 @@
 <template>
-  <Header />
-  <slot />
+  <div class="overflow-hidden">
+    <Header />
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts">
