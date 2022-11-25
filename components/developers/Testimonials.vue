@@ -79,16 +79,13 @@ const testimonials = [
 }
 .carousel__prev,
 .carousel__next {
-  @apply bg-white shadow;
+  @apply bg-white shadow rounded-full;
 }
-.carousel__prev svg,
-.carousel__next svg {
-  fill: theme("colors.space-gray.dark");
-}
-.carousel__pagination-button {
+.carousel__pagination-button::after {
   @apply bg-space-pink-light;
 }
-.carousel__pagination-button--active {
+.carousel__pagination-button:hover::after,
+.carousel__pagination-button--active::after {
   @apply bg-space-pink;
 }
 .bg-gradient {
