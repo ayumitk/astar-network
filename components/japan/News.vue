@@ -2,7 +2,7 @@
   <div
     class="mx-auto px-4 sm:px-6 relative z-10 lg:flex items-center justify-center"
   >
-    <div class="sm:mr-12 mb-6" data-aos="fade-right">
+    <div class="sm:mr-12 mb-6" data-aos="zoom-out-right">
       <img
         class="mx-auto max-w-[280px] sm:max-w-[400px] lg:max-w-none"
         src="~/assets/images/japan/news-image.svg"
