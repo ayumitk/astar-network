@@ -113,6 +113,10 @@ const nav = [
         name: "Bug Bounty Program",
         href: "https://immunefi.com/bounty/astarnetwork",
       },
+      {
+        name: "Astar Japan Lab",
+        href: "https://japan.astar.network/",
+      },
     ],
   },
   {
