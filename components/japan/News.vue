@@ -21,7 +21,14 @@
             class="w-36 shrink-0 block text-gray-400 text-sm sm:text-base"
             >{{ item.publishedDate }}</time
           >
-          <span>{{ item.text }}</span>
+          <a
+            :href="item.href"
+            target="_blank"
+            rel="noopener"
+            class="hover:underline transition hover:text-space-cyan-light"
+          >
+            {{ item.text }}
+          </a>
         </li>
       </ul>
     </div>
@@ -33,34 +40,42 @@ const news = [
   {
     publishedDate: "Oct 21 2022",
     text: "Astar Japan Lab 1st offline event will be held!",
+    href: "",
   },
   {
     publishedDate: "Sep 26 2022",
     text: "AstarNetwork ran a full-page ad in the Nihon Keizai Shimbun and distributed NFTs in the paper.",
+    href: "",
   },
   {
     publishedDate: "Sep 22 2022",
     text: "$ASTR will be listed in Japan",
+    href: "",
   },
   {
     publishedDate: "Sep 2 2022",
     text: "[9/2 18:00] Astar Network x Web3 Startup",
+    href: "",
   },
   {
     publishedDate: "Aug 29 2022",
     text: "AstarWeek",
+    href: "",
   },
   {
     publishedDate: "Aug 16 2022",
     text: "Astar Japan Lab Activity Report and AstarWeek",
+    href: "",
   },
   {
     publishedDate: "Jul 13 2022",
     text: "Astar Japan Lab Activity Report and the First Study Session",
+    href: "",
   },
   {
     publishedDate: "Jun 23 2022",
     text: "Astar Japan Lab is established.",
+    href: "",
   },
 ];
 </script>
